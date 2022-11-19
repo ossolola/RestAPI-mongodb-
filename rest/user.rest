@@ -1,0 +1,28 @@
+@url = http://localhost:3000
+
+GET http://localhost:3000/user HTTP/1.1
+
+###
+GET http://localhost:3000/user/637499344d8fa0b1309d0644 HTTP/1.1
+
+###
+POST http://localhost:3000/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "username" : "afomisenufena",
+    "email" : "fena@outlook.com"
+}
+
+
+###
+PUT {{url}}/user/6374c17dd2a073f3a4f56f06 HTTP/1.1
+Content-Type: application/json
+
+{
+    "username" : "okikiJonathan",
+    "email" : "jona@outlook.com"
+}
+
+###
+DELETE {{url}}/user/63749808b115c6eb6f50b6e9 HTTP/1.1
